@@ -1,0 +1,248 @@
+* {
+    font: inherit;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family:"Poppins", sans-serif;
+    background-image: url("images/bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+#main-container {
+    display: flex;
+}
+
+#intro {
+    width: 42vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-heading {
+    color: white;
+    font-size: 3.6vw;
+    font-weight: 700;
+    margin: 1.5% 0 4% 0;
+    line-height: 4vw;
+}
+
+#main-paragraph {
+    color: white;
+    margin-right:7% ;
+}
+
+#signup-form {
+    width: 35vw;
+}
+
+#price-container {
+    background-color: hsl(248, 32%, 49%);
+    border-radius: .5vw;
+    padding: 3.5% 7%;
+    margin-bottom: 4%;
+    box-shadow: 0 .4vw hsl(0, 0%, 0%, .15);
+}
+
+#price {
+    color: white;
+    text-align: center;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+#price-span {
+    font-weight: 400;
+    color: hsl(0, 10%, 100% , .7);
+}
+
+#the-form {
+    display: flex;
+    flex-direction: column;
+    padding: 7%;
+    background-color: white;
+    border-radius: .5vw;
+    box-shadow: 0 .6vw hsl(0, 0%, 0%, .15);
+}
+
+.input-field {
+    background-color: transparent;
+    padding: 3.2% 5%;
+    margin-bottom: 1.2vw;
+    border-radius: .4vw;
+    border-style: solid;
+    border-color: hsl(246, 25%, 77%, .4);
+    border-width: .1vw;
+    color: hsl(249, 10%, 26%, .7);
+    font-size: .9vw;
+    font-weight: 700;
+}
+
+.input-field:focus {
+    color: hsl(249, 10%, 26%);
+    outline: none;
+    border-color: hsl(249, 10%, 26%);
+    border-width: .1vw;
+}
+
+#the-button {
+    padding: 3% 0;
+    margin-bottom: 3%;
+    background-color: hsl(154, 59%, 51%);
+    border-style: solid;
+    border-color: transparent;
+    border-radius: .5vw;
+    color: white;
+    font-size: 1vw;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#the-button:hover {
+    cursor: pointer;
+    background-color:hsl(154, 59%, 51%, .5) ;
+}
+
+#warn {
+    font-size: .65vw;
+    text-align: center;
+    color: hsl(246, 25%, 77%);
+    font-weight: 500;
+}
+
+#terms-and-services {
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+    font-size: .7vw;
+}
+
+.icon-error {
+    width: 1.5vw;
+    display: inline;
+    margin-left: 26.9vw;
+    position: relative;
+    top: -2.4vw; 
+    display: none;
+}
+
+.cannot-be-empty {
+    text-align: right;
+    margin-bottom: 1.2vw;
+    position: relative;
+    top: -1vw;
+    font-size: .7vw;
+    color: hsl(0, 100%, 74%);  
+    display: none; 
+}
+
+#email-alert {
+    display: none;
+}
+
+@media screen and (max-width:700px) {
+
+    body {
+        height: 100%;
+    }
+    #main-container {
+        flex-direction: column;
+        
+    }
+
+    #intro {
+        width: 90vw;
+        margin-top: 20%;
+    }
+
+    #main-heading {
+        font-size: 7vw;
+        text-align: center;
+        margin: 1.5% 0 6% 0;
+        line-height: 9vw;
+    }
+    
+    #main-paragraph {
+        text-align: center;
+        margin-bottom:15% ;
+    }
+
+    #signup-form {
+        width: 90vw;
+    }
+
+    #price-container {
+        border-radius: 2.7vw;
+        margin-bottom: 5%;
+        box-shadow: 0 1.8vw hsl(0, 0%, 0%, .15);
+    }
+
+    #price {
+        font-size: 4vw;
+        padding: 0 20%;
+    }
+
+    #the-form {
+        padding: 7%;
+        border-radius: 1.5vw;
+        box-shadow: 0 2vw hsl(0, 0%, 0%, .15);
+        margin-bottom: 15%;
+    }
+
+    .input-field {
+        padding: 5% 5%;
+        margin-bottom: 3.5vw;
+        border-radius: 1vw;
+        border-width: .1vw;
+        font-size: 4vw;
+    }
+
+    #the-button {
+        padding: 3% 0;
+        margin-bottom: 3%;
+        border-radius: 1.5vw;
+        font-size: 4.5vw;  
+    }
+
+    #warn {
+        font-size: 3vw;
+        padding: 0vw 5vw;
+        line-height: 6.5vw;
+    }
+
+    #terms-and-services {
+        font-size: 3.2vw;
+    }
+
+    .icon-error {
+        width: 5vw;
+        
+        margin-left: 70vw;
+        position: relative;
+        top: -10vw; 
+        display: none;
+    }
+    
+    .cannot-be-empty {
+        margin-bottom: 3.5vw;
+        position: relative;
+        top: -3vw;
+        font-size: 2.5vw;
+    }
+    
+    #email-alert {
+        display: none;
+    }
+        
+}
+
+
